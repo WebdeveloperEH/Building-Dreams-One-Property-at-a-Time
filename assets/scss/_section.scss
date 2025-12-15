@@ -1,0 +1,101 @@
+
+//>>>>> Section Title Start <<<<<//
+
+.section-title {
+	position: relative;
+	z-index: 99;
+	margin-bottom: 30px;
+
+	@include breakpoint (max-md){
+		margin-bottom: 0;
+	}
+
+	h5 {
+		font-size: 18px;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+		line-height: 1;
+		color: $st-theme-color-2;
+		font-family: $st-heading-font;
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		margin-bottom: 20px;
+        gap: 8px;
+
+
+		@include breakpoint (max-md){
+			font-size: 16px;
+		}
+
+		@include breakpoint (max-xxs){
+			font-size: 14px;
+		}
+
+		i {
+			color: $st-theme-color-2;
+		}
+
+	}
+
+	h2 {
+		text-transform: capitalize;
+	}
+}
+
+.section-title-area	{
+	@include flex;
+	justify-content: space-between;
+	position: relative;
+	z-index: 9;
+	margin-bottom: 30px;
+
+	.section-title {
+		margin-bottom: 0;
+	}
+	
+	@include breakpoint (max-lg) {
+		flex-wrap: wrap;
+		gap: 30px;
+	}
+
+	@include breakpoint (max-md){
+		margin-bottom: 0;
+	}
+}
+
+
+//>>>>> Section Title End <<<<<//
+
+//>>>>> Basic Css Start <<<<<//
+
+.center {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.section-bg {
+	background-color: $st-bg-color;
+}
+
+.section-bg-2 {
+	background-color: $st-header-color;
+}
+
+.section-bg-3 {
+	background-color: #F4F4F4;
+}
+
+.section-padding {
+	padding: 120px 0;
+
+	@include breakpoint(max-xl){
+		padding: 100px 0;
+	}
+
+	@include breakpoint(max-lg){
+		padding: 80px 0;
+	}
+}
+//>>>>> Basic Css End <<<<<//
+

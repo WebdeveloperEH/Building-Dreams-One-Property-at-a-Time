@@ -1,0 +1,117 @@
+/*!
+*    ______ _       _   _
+*    |  ____| |     | | (_)
+*    | |__  | | __ _| |_ _  ___ ___  _ __
+*    |  __| | |/ _` | __| |/ __/ _ \| '_ \
+*    | |    | | (_| | |_| | (_| (_) | | | |
+*    |_|    |_|\__,_|\__|_|\___\___/|_| |_|
+*
+*         https://www.flaticon.com
+*/
+
+@font-face {
+    font-family: "flaticon";
+    src: url("../flaticon/flaticon.woff2?aa2022df5cf5a84503054bca348afe5c") format("woff2"), url("../flaticon/flaticon.woff?aa2022df5cf5a84503054bca348afe5c") format("woff"), url("../flaticon/flaticon.eot?aa2022df5cf5a84503054bca348afe5c#iefix") format("embedded-opentype"), url("../flaticon/flaticon.ttf?aa2022df5cf5a84503054bca348afe5c") format("truetype"), url("../flaticon/flaticon.svg?aa2022df5cf5a84503054bca348afe5c#flaticon_livesta___real_estate") format("svg")
+}
+
+i[class^="flaticon-"]:before,
+i[class*=" flaticon-"]:before,
+span[class^="flaticon-"]:before,
+span[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-home:before {
+    content: "\f101";
+}
+
+.flaticon-right-arrow:before {
+    content: "\f102";
+}
+
+.flaticon-rooftop:before {
+    content: "\f103";
+}
+
+.flaticon-parking:before {
+    content: "\f104";
+}
+
+.flaticon-dumbbell:before {
+    content: "\f105";
+}
+
+.flaticon-pet-care:before {
+    content: "\f106";
+}
+
+.flaticon-facility:before {
+    content: "\f107";
+}
+
+.flaticon-playground:before {
+    content: "\f108";
+}
+
+.flaticon-appraisal:before {
+    content: "\f109";
+}
+
+.flaticon-asset:before {
+    content: "\f10a";
+}
+
+.flaticon-property-management:before {
+    content: "\f10b";
+}
+
+.flaticon-investment:before {
+    content: "\f10c";
+}
+
+.flaticon-warehouse:before {
+    content: "\f10d";
+}
+
+.flaticon-villa:before {
+    content: "\f10e";
+}
+
+.flaticon-apartment:before {
+    content: "\f10f";
+}
+
+.flaticon-home-1:before {
+    content: "\f110";
+}
+
+.flaticon-store:before {
+    content: "\f111";
+}
+
+.flaticon-maximize:before {
+    content: "\f112";
+}
+
+.flaticon-full-screen:before {
+    content: "\f113";
+}
+
+.flaticon-real-estate:before {
+    content: "\f114";
+}
+
+.flaticon-financial-advisor:before {
+    content: "\f115";
+}
+
+.flaticon-virtual-tour:before {
+    content: "\f116";
+}

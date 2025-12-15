@@ -1,0 +1,159 @@
+/* --------------------------------------------
+    Template Default Fonts & Fonts Styles
+ ---------------------------------------------- */
+ 
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+$st-heading-font: 'Manrope', sans-serif;
+$st-body-font: "Jost", sans-serif;
+//font-family: "Font Awesome 6 Free";
+$fa: "Font Awesome 6 Pro";
+
+body {
+    font-family: $st-body-font;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: $st-text-color;
+    background-color: $st-white;
+	padding: 0;
+	margin: 0;
+	overflow-x: hidden;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+	padding: 0;
+}
+
+input:focus{
+	color: $st-white;
+	outline: none;
+}
+
+input{
+	color: $st-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $st-heading-font;
+    margin: 0px;
+	padding: 0;
+    color: $st-header-color;
+	@include transition;
+	text-transform: capitalize;
+}
+
+h1 {
+	font-size: 72px;
+	font-weight: 800;
+	line-height: 112%;
+
+
+	@include breakpoint(max-xxxl){
+		font-size: 60px;
+	}
+
+	@include breakpoint(max-xl){
+		font-size: 50px;
+	}
+
+	@include breakpoint(max-lg){
+		font-size: 60px;
+	}
+
+	@include breakpoint(max-md){
+		font-size: 55px;
+	}
+
+	@include breakpoint(max-sm){
+		font-size: 43px;
+	}
+
+	@include breakpoint(max-xxs){
+		font-size: 36px;
+	}
+}
+
+h2 {
+	font-size: 48px;
+	font-weight: 800;
+	line-height: 117%;
+
+	@include breakpoint(max-xxl){
+		font-size: 44px;
+	}
+
+	@include breakpoint(max-xl){
+		font-size: 40px;
+	}
+
+	@include breakpoint(max-lg){
+		font-size: 36px;
+	}
+
+	@include breakpoint(max-md){
+		font-size: 32px;
+	}
+
+	@include breakpoint(max-sm){
+		font-size: 28px;
+	}
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 800;
+	line-height: 134%;
+
+	@include breakpoint(max-sm){
+		font-size: 20px;
+	}
+}
+
+h4 {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+h5 {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+h6 {
+	font-size: 16px;
+	font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    outline: none !important;
+    cursor: pointer;
+    color: $st-header-color;
+	@include transition;
+}
+
+p {
+    margin: 0px;
+	@include transition;
+}
+
+span {
+	margin: 0px;
+	// @include transition;
+}
+

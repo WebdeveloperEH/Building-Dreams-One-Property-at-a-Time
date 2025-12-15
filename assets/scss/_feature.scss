@@ -1,0 +1,203 @@
+.house-offer-box {
+    margin-top: 30px;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 16px;
+    background-color: $st-white;
+    position: relative;
+    z-index: 2;
+    border: solid 1.5px #fff;
+    @include transition;
+
+    .icon {
+        width: 64px;
+        height: 64px;
+        line-height: 64px;
+        text-align: center;
+        border-radius: 8px;
+        border: 1px solid rgba(204, 206, 213, 0.24);
+        font-size: 32px;
+        text-align: center;
+        color: $st-header-color;
+        margin: 0 auto;
+        @include transition;
+    }
+
+    .content {
+        margin-top: 20px;
+
+    }
+
+    &.style-2 {
+        padding: 40px 18px;
+
+        .icon-1 {
+            color: $st-header-color;
+            font-size: 45px;
+            @include transition;
+        }
+
+        &:hover {
+            background-color: #FFF9F6;
+            
+            .icon-1 {
+                color: $st-theme-color-2;
+            }
+        }
+    }
+
+    &:hover {
+         border: solid 1.5px #E3572D;
+
+        .icon {
+            background-color: $st-theme-color-2;
+            color: $st-white;
+        }
+    }
+}
+
+.gt-counter-wrapper {
+    border-radius: 12px;
+    background: $st-theme-color;
+    position: relative;
+    @include flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 45px 30px;
+
+    @include breakpoint (max-lg){
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .gt-counter {
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 72px;
+        color: $st-header-color;
+        font-weight: 800;
+        letter-spacing: -1px;
+
+        @include breakpoint (max-sm){
+           font-size: 50px;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: $st-heading-font;
+        color: $st-header-color;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        background-color: $st-theme-color;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+
+        @include breakpoint (max-sm){
+          font-size: 16px;
+        }
+    }
+}
+
+.gt-counter-section {
+    position: relative;
+    z-index: 9;
+
+    &::before {
+        @include before;
+        background-color: #16243E;
+        z-index: -1;
+        height: 50%;
+    }
+
+    &::after {
+        @include before;
+        background-color: #F4F4F4;
+        z-index: -1;
+        top: 50%;
+    }
+}
+
+.video-bg-wrapper {
+
+    .logo-item {
+        @include flex;
+        gap: 30px;
+        justify-content: center;
+
+        @include breakpoint (max-xl) {
+           flex-wrap: wrap;
+           gap: 24px;
+        }
+
+        .logo-image {
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.12);
+            backdrop-filter: blur(24px);
+            padding: 16px 38px;
+            height: 80px;
+            @include transition;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+           
+
+            &:hover {
+                border: 1px solid $st-theme-color-2;
+                border-radius: 100px;
+            }
+        }
+    }
+
+    .video-button {
+        position: relative;
+        background: rgba(227, 87, 45, 0.24);
+        border: 2px solid $st-white;
+        width: 148px;
+        height: 148px;
+        line-height: 148px;
+        border-radius: 100%;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 300px;
+
+        @include breakpoint (max-xl) {
+            margin-top: 30px;
+        }
+
+        .video-btn {
+            text-align: center;
+            color: $st-white;
+            display: inline-block;
+            text-align: center;
+            font-size: 24px;
+            z-index: 999;
+            position: absolute;
+            z-index: 99;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 108px;
+            height: 108px;
+            line-height: 108px;
+            background-color: $st-theme-color-2;
+            border-radius: 100%;
+        }
+    }
+}
+
+.video-bg-section {
+    position: relative;
+    z-index: 9;
+
+    &::before {
+        @include before;
+        background: linear-gradient(180deg, #16243E 0%, rgba(22, 36, 62, 0) 100%),;
+        z-index: -1;
+    }
+}

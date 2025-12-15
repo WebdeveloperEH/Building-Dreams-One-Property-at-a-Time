@@ -1,0 +1,83 @@
+//>>>>> Component Button Here <<<<<//
+
+
+.theme-btn {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    border: none;
+    outline: none !important;
+    color: $st-white;
+    font-family: 'Manrope', sans-serif;
+    padding: 21px 32px;
+    transition: 500ms;
+    background-color: $st-header-color;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1;
+    text-transform: uppercase;
+    border-radius: 32px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    z-index: 9;
+    color: $st-theme-color;
+
+    &::before {
+        content: "";
+        background-color: $st-theme-color;
+        border-radius: 100px;
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transform: translate(-100%, 0) rotate(10deg);
+        transform-origin: top left;
+        transition: 0.2s transform ease-out;
+        will-change: transform;
+        z-index: -1;
+    }
+
+    i {
+      margin-left: 10px;
+    }
+
+    &:hover {
+      color: $st-header-color;
+
+      &::before {
+         transform: translate(0, 0);
+      }
+    }
+}
+
+
+// .link-btn {
+//     font-size: 16px;
+//     font-weight: 700;
+//     display: inline-block;
+//     font-family: 'Barlow', sans-serif;
+//     text-transform: capitalize;
+//     color: $st-white;
+//     position: relative;
+//     padding-left: 25px;
+
+//     &::after {
+//         position: absolute;
+//         top: 2px;
+//         left: 0;
+//         content: "\e902";
+//         color: $st-theme-color;
+//         font-family: 'icomoon' !important;
+//     }
+
+//     &:hover {
+//         color: $st-theme-color;
+//     }
+// }
+
+//>>>>> Component Button End <<<<<//
+

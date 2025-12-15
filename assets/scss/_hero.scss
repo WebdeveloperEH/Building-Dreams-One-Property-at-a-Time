@@ -1,0 +1,556 @@
+.hero-1 {
+    background-color: $st-header-color;
+
+    @include breakpoint (max-xxl){
+       padding-top: 170px;
+       padding-bottom: 120px;
+    }
+
+     @include breakpoint (max-xl){
+       padding-bottom: 0;
+    }
+
+    .container-fluid {
+        padding: 0 155px;
+
+        @include breakpoint (max-xxxl){
+            padding: 0 50px;
+        }
+
+        @include breakpoint (max-xxl){
+            padding: 0 40px;
+        }
+
+        @include breakpoint (max-xl){
+            padding: 0 30px;
+        }
+    }
+
+    .hero-content {
+        max-width: 680px;
+
+        h5 {
+            color: $st-theme-color;
+            margin-bottom: 12px;
+
+            @include breakpoint (max-xxs){
+                font-size: 16px;
+            }
+
+            i {
+                margin-right: 8px;
+            }
+        }
+
+        h1 {
+            color: $st-white;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: $st-white;
+            opacity: .7;
+        }
+    }
+
+    .hero-image {
+        margin-left: -40%;
+
+        @include breakpoint (max-xxl){
+            margin-left: 0;
+
+            img {
+                @include imgw;
+            }
+        }
+    }
+
+    .form-area {
+       width: 1000px;
+       margin-top: 60px;
+
+        @include breakpoint (max-xl){
+            width: initial;
+            margin-top: 30px;
+        }
+
+       .nav {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            .nav-item {
+                .nav-link {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: $st-header-color;
+                    padding: 16px 24px;
+                    background-color: $st-white;
+                    font-family: $st-heading-font;
+                    border-radius: 12px 12px 0px 0px;
+
+                    &.active {
+                        background-color: $st-theme-color-2;
+                        color: $st-white;
+                    }
+                }
+            }
+       }
+    
+        form {
+            border-radius: 0px 16px 16px 16px;
+            background: rgba(255, 255, 255, 0.24);
+            backdrop-filter: blur(24px);
+            margin: 0;
+            padding: 24px 22px;
+            position: relative;
+            z-index: 99;
+
+            .form-item {
+                h6 {
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: $st-white;
+                    margin-bottom: 15px;
+                    display: inline-block;
+                }
+
+                input {
+                    width: 100%;
+                    background-color: transparent;
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-family: $st-heading-font;
+                    border: none;
+                    color: $st-white;
+
+                    &::placeholder {
+                        color: $st-white;
+                    }
+                }
+
+                .single-select {
+                    padding: 0;
+                    background-color: transparent;
+                    border: none;
+                    line-height: 1;
+                    height: initial;
+                    font-size: 18px;
+                    font-weight: 600;
+                    font-family: $st-heading-font;
+                    color: $st-white;
+
+                    .option {
+                        color: $st-header-color;
+                    }
+
+                    &::after {
+                        width: 8px;
+                        height: 8px;
+                        border-bottom: 2px solid #fff;
+                        border-right: 2px solid #fff;
+                    }
+                }
+            }
+
+            .text-align-right {
+                text-align: right;
+
+                 @include breakpoint (max-xl){
+                    text-align: left;
+                }
+            }
+
+            .theme-btn {
+                background-color: $st-theme-color-2;
+                color: $st-white;
+                padding: 19px 36px;
+
+                &::before {
+                    background-color: $st-header-color;
+                }
+            }
+        }
+
+        .button-list {
+            @include flex;
+            gap: 30px;
+            margin-top: 48px;
+
+            @include breakpoint (max-xl){
+               flex-wrap: wrap;
+               gap: 15px;
+               margin-top: 30px;
+            }
+
+            .theme-btn {
+                background-color: transparent;
+                border: 1px solid $st-white;
+                padding: 18px 28px;
+                color: $st-white;
+
+                &::before {
+                    background-color: $st-theme-color-2;
+                }
+
+                &:hover {
+                    border: 1px solid $st-theme-color-2;
+                }
+            }
+        }
+    }
+}
+
+.hero-2 {
+    position: relative;
+    z-index: 9;
+
+    &::before {
+        @include before;
+        background-color: $st-theme-color;
+        width: 50%;
+        height: calc(100% - 200px);
+        z-index: -1;
+
+        @include breakpoint (max-xxl){
+            display: none;
+        }
+    }
+
+    .social-icon {
+        @include flex;
+        gap: 20px;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        top: 25%;
+        position: absolute;
+        left: 2%;
+
+        @include breakpoint (max-xxxl){
+            left: .6%;
+        }
+
+        @include breakpoint (max-xxl){
+            display: none !important;
+        }
+
+        span {
+            color: $st-text-color;
+            font-weight: 600;
+            font-size: 18px;
+            font-family: $st-heading-font;
+        }
+
+        a {
+            transform: rotate(90deg);
+            font-size: 18px;
+
+            &:hover {
+                color: $st-theme-color-2;
+            }
+        }
+    }
+
+    .container-fluid {
+        padding: 0 120px;
+
+        @include breakpoint (max-xxxl){
+            padding: 0 50px;
+        }
+
+        @include breakpoint (max-xxl){
+            padding: 0 40px;
+        }
+
+        @include breakpoint (max-xl){
+            padding: 0 30px;
+        }
+    }
+
+    .hero-wrapper {
+        overflow: hidden;
+        border-radius: 24px;
+        padding-top: 40px;
+
+        @include breakpoint (max-xxl){
+            padding: 80px 0;
+        }
+
+        @include breakpoint (max-lg){
+            padding: 50px 0 0;
+        }
+
+        .hero-image {
+            margin-left: -180px;
+
+            @include breakpoint (max-xxxl){
+                margin-left: -300px;
+            }
+
+            @include breakpoint (max-xxl){
+                margin-left: 0;
+
+                img {
+                    @include imgw;
+                }
+            }
+        }
+
+        .hero-content {
+            max-width: 680px;
+            margin-left: 80px;
+
+            @include breakpoint (max-xxxl){
+               padding-right: 30px;
+            }
+
+            @include breakpoint (max-xxl){
+               padding-right: 0;
+            }
+
+            @include breakpoint (max-xl){
+                margin-left: 0;
+                padding: 0 30px;
+            }
+
+            h5 {
+                color: $st-theme-color;
+                margin-bottom: 12px;
+
+                @include breakpoint (max-xxs){
+                    font-size: 16px;
+                }
+
+                i {
+                    margin-right: 8px;
+                }
+            }
+
+            h1 {
+                color: $st-white;
+                margin-bottom: 40px;
+
+                @include breakpoint (max-md){
+                    margin-bottom: 20px;
+                }
+            }
+
+            p {
+                color: $st-white;
+                opacity: .7;
+                max-width: 665px;
+            }
+
+            .theme-btn {
+                background-color: $st-theme-color-2;
+                color: $st-white;
+                margin-top: 50px;
+
+                @include breakpoint (max-md){
+                    margin-top: 30px;
+                }
+
+                &::before {
+                    background-color: $st-white;
+                }
+
+                &:hover {
+                    color: $st-header-color;
+                }
+            }
+        }
+    }
+}
+
+.hero-3 {
+     position: relative;
+     z-index: 9;
+     padding: 100px 0 20px;
+
+    &::before {
+        @include before;
+        background-color: #16243E;
+        width: 68%;
+        z-index: -1;
+
+        @include breakpoint (max-xxl){
+            width: 100%;
+        }
+    }
+
+    .left-shape {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+
+        img {
+            @include imgw;
+        }
+
+         @include breakpoint (max-xl) {
+            display: none;
+        }
+    }
+
+    .bottom-shape {
+        position: absolute;
+        bottom: 0;
+        left: 36%;
+
+        @include breakpoint (max-xl) {
+            display: none;
+        }
+    }
+
+    .top-shape {
+        position: absolute;
+        left: 48%;
+        top: 67px;
+
+         @include breakpoint (max-xl) {
+            display: none;
+        }
+    }
+
+    .container-fluid {
+        padding: 0 150px;
+
+        @include breakpoint (max-xxxl){
+            padding: 0 50px;
+        }
+
+        @include breakpoint (max-xxl){
+            padding: 0 40px;
+        }
+
+        @include breakpoint (max-xl){
+            padding: 0 30px;
+        }
+    }
+
+    
+    .hero-content {
+
+        h5 {
+            position: relative;
+            color: $st-theme-color;
+            margin-bottom: 20px;
+
+            &::before {
+                @include before;
+                width: 64px;
+                height: 64px;
+                text-align: center;
+                background-color: rgba(227, 87, 45, 0.16);
+                top: -20px;
+                left: -24px;
+            }
+        }
+
+        h1 {
+            color: $st-white;
+            margin-bottom: 20px;
+
+             @include breakpoint (max-sm) {
+                font-size: 28px;
+            }
+
+             @include breakpoint (max-xl) {
+                font-size: 42px;
+            }
+
+             @include breakpoint (max-lg) {
+                font-size: 40px;
+            }
+
+             @include breakpoint (max-md) {
+                font-size: 34px;
+            }
+
+             @include breakpoint (max-sm) {
+                font-size: 28px;
+            }
+        }
+
+        p {
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 773px;
+        }
+
+        .hero-button {
+            @include flex;
+            gap: 24px;
+            margin-top: 48px;
+
+             @include breakpoint (max-xl) {
+                flex-wrap: wrap;
+            }
+
+            .theme-btn {
+                background-color: $st-theme-color-2;
+                color: $st-white;
+
+                &::before {
+                    background-color: $st-white;
+                }
+
+                &:hover {
+                    color: $st-header-color;
+                }
+
+                &.border-btn {
+                    border: 1px solid $st-white;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    .hero-image {
+        img  {
+            @include imgw;
+            border-radius: 24px;
+        }
+    }
+
+     .small-image {
+        max-width: 88px;
+
+        img {
+            @include imgw;
+            border-radius: 24px;
+
+             @include breakpoint (max-xl) {
+                border-radius: 16px;
+            }
+        }
+    }
+
+    // .array-button-2 {
+
+    //     .array-prev {
+    //         width: 48px;
+    //         height: 48px;
+    //         line-height: 48px;
+    //         color: $st-text-color;
+    //         position: absolute;
+    //         bottom: 75px;
+    //         left: 65.5%;
+    //         z-index: 9;
+    //         background-color: $st-white;
+    //     }
+
+    //     .array-next {
+    //         width: 48px;
+    //         height: 48px;
+    //         line-height: 48px;
+    //         color: $st-white;
+    //         position: absolute;
+    //         bottom: 80px;
+    //         right: 9.5%;
+    //         z-index: 9;
+    //         background-color: $st-theme-color-2;
+    //     }
+    // }
+}

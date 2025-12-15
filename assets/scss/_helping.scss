@@ -1,0 +1,246 @@
+
+//page scroll bar add
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px $st-bg-color; 
+	border-radius: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: $st-theme-color;
+	border-radius: 10px;
+}
+//page scroll bar add
+
+//Basic Code Start
+.fix {
+  overflow: hidden;
+}
+
+.ralt{
+ position: relative;
+}
+
+//Basic Code End
+
+//Video Css Start
+.ripple {
+  position: relative;
+
+  &::before,&::after {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 80px;
+      height: 80px;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      border-radius: 50%;
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.5);
+      -webkit-animation: rippleOne 3s infinite;
+      animation: rippleOne 3s infinite;
+  }
+
+  &::before {
+      -webkit-animation-delay: 0.9s;
+      animation-delay: 0.9s;
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
+
+  &::after {
+      -webkit-animation-delay: 0.6s;
+      animation-delay: 0.6s;
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+  }
+}
+//Video Css End
+.st-array-button {
+  @include flex;
+  gap: 14px;
+
+}
+.array-prev {
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  background-color: $st-theme-color;
+  color: $st-white;
+  @include transition;
+  border-radius: 50%;
+
+  &:hover {
+     background-color: $st-header-color;
+      color: $st-white;
+  }
+}
+
+.array-next {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    background-color: $st-header-color;
+    color: $st-white;
+    @include transition;
+    border-radius: 50%;
+
+    &:hover {
+      background-color: $st-theme-color;
+      color: $st-white;
+    }
+}
+//pagination default
+
+//pagination default
+.swiper-dot {
+  padding-top: 50px;
+  position: relative;
+  .swiper-pagination-bullet {
+      width: 10px;
+      height: 10px;
+      transition: 0.6s;
+      background-color: rgba(252, 252, 252, 0.7);
+      opacity: 1;
+      border-radius: 10px;
+      &:not(:last-child){
+      margin-right: 10px;
+      }
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+      background-color: $st-theme-color;
+      transition: 0.6s;
+      position: relative;
+
+      &::before{
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      line-height: 22px;
+      top: -6px;
+      left: -6px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 2px solid $st-theme-color;
+      content: "";
+      }
+  }
+}
+.bg-cover {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+.st-slide-transtion {
+	-webkit-transition-timing-function: linear;
+	transition-timing-function: linear;
+}
+.st-brand-slide-element {
+  width: auto;
+	display: inline-block;
+}
+
+br {
+    @include breakpoint (max-md){
+      display: none;
+    }
+}
+
+
+.sticky-style {
+  position: sticky !important;
+  top: 100px;
+}
+
+.page-nav-wrap {
+  margin-top: 60px;
+
+  ul {
+      li {
+          display: inline-block;
+
+          &.active {
+
+            .page-numbers {
+              background-color: $st-theme-color-2;
+              color: $st-white;
+            }
+          }
+
+          .page-numbers {
+              &.current {
+                  background-color: $st-theme-color-2;
+                  color: $st-white;
+              }
+
+              display: inline-block;
+              width: 48px;
+              height: 48px;
+              text-align: center;
+              line-height: 48px;
+              border-radius: 0;
+              background: #F4F4F4;
+              color: $st-header-color;
+              font-weight: 400;
+              transition: all 0.3s ease-in-out;
+              margin: 0 2px;
+              border-radius: 50%;
+              font-family: $st-heading-font;
+
+              @media (max-width: 767px) {
+                  margin-top: 10px;
+                  width: 40px;
+                  height: 40px;
+                  line-height: 40px;
+                  font-size: 14px;
+              }
+
+              i {
+                  margin-top: 2px;
+                  color: $st-header-color;
+                  @include transition;
+              }
+
+              &:hover {
+                  background-color: $st-theme-color-2;
+                  color: $st-white;
+
+                  i {
+                    color: $st-white;
+                  }
+              }
+          }
+      }
+  }
+}
+
+.swiper.imgSlider {
+  position: relative;
+  bottom: 50px;
+  left: 24%;
+  
+  @include breakpoint(max-xl){
+    bottom: 110px;
+  }
+
+  @include breakpoint(max-lg){
+    bottom: 120px;
+  }
+
+  @include breakpoint(max-sm){
+    bottom: 63px;
+  }
+
+}

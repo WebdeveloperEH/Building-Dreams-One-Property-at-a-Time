@@ -1,0 +1,98 @@
+/*
+Theme Name: Livesta 
+Author: Scriptotheme
+Author URI: https://themeforest.net/user/Scriptotheme/portfolio
+Description: Livesta - Real Estate HTML Template
+Service Html Template 
+Version: 1.0.0
+
+/*----------------------------------------*/
+/*  TABLE OF CONTENTS
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/* >> Basic Core
+    1. Mixins
+    2. Variables
+    3. Buttons
+    4. Typography
+/*----------------------------------------*/
+
+/*----------------------------------------*/
+/* >> Template Sections
+    5. About
+    6. Animation
+    7. Contact
+    8. CTA
+    9. Feature
+   10. Footer
+   11. Header
+   12. Helping
+   13. Hero
+   14. MeanMenu
+   15. News
+   16. Preloader
+   17. Project
+   18. Propertie
+   19. Section
+   20. Service
+   21. Team
+   22. Testimonial
+/*----------------------------------------*/
+
+
+//>> Basic Start <<//
+
+//>> Mixins <<//
+@import "_mixins";
+//>> Variables <<//	
+@import "_variables";
+//>> Buttons <<//
+@import "_buttons";
+//>> Typography <<//
+@import "_typography";
+//>> Basic End <<//	
+
+
+//>> Template Section Style Start <<//
+
+//>> About <<//
+@import "_about";
+//>> Animation <<//
+@import "_animation";
+//>> Contact <<//
+@import "_contact";
+//>> Cta <<//
+@import "_cta";
+//>> Feature <<//
+@import "_feature";
+//>> Footer <<//
+@import "_footer";
+//>> Header <<//
+@import "_header";
+//>> Helping <<//
+@import "_helping";
+//>> Hero <<//
+@import "_hero";
+//>> MeanMenu <<//
+@import "_meanmenu";
+//>> News <<//
+@import "_news";
+//>> Preloader <<//
+@import "_preloader";
+//>> Project <<//
+@import "_project";
+//>> Propertie <<//
+@import "_propertie";
+//>> Section <<//
+@import "_section";
+//>> Service <<//
+@import "_service";
+//>> Team <<//
+@import "_team";
+//>> Testimonial <<//
+@import "_testimonial";
+
+
+//>> Template Section Style End <<//
+
